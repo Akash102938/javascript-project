@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootsrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- custome css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- all links set up now start  -->
+
+    <main>
+        <div class="top-header">
+            <div class="container">
+                <div class="top-content">
+                    <div class="top-flex">
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope"></i>infocodingwing@gmail.com</a>
+                            <a href=""><i class="fa-solid fa-phone"></i>12345 67890</a>
+                        </li>
+                    </div>
+                    <div class="top-social">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <header class="header-main">
+            <div class="container">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                <div class="head-search">
+                    <form action="">
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="header-icons">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="container text-center">
+                <div class="nav-toggle"
+                    onclick="document.querySelector('.navbar .container ul').classList.toggle('active')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Arriavls</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Offers</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- lets now create a banner  -->
+
+
+        <section class="banner-sec" style="background-image: url(images/header-bg.png);">
+            <div class="container">
+                <div class="header-main-text">
+                    <h5>Exclusive Offer 20/- off</h5>
+                    <h1>A Diffrent Kind of Grocery Store</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim laboriosam, eius natus,
+                        ut eligendi consequatur id voluptas illo voluptatum ad perferendis sed unde veniam!</p>
+                    <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lets make category  -->
+
+        <section class="item-header-sec py-5">
+            <div class="container">
+                <div class="item-slider text-center">
+
+                    <div class="items-header">
+                        <img src="images/icon-food-1.png" alt="">
+                        <h4>Vegatables</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-2.png" alt="">
+                        <h4>Fruits</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-3.png" alt="">
+                        <h4>Breads</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-4.png" alt="">
+                        <h4>Eggs</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-5.png" alt="">
+                        <h4>Sea Foods</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-6.png" alt="">
+                        <h4>Meat</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-7.png" alt="">
+                        <h4>Juices</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-3.png" alt="">
+                        <h4>Breads</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-4.png" alt="">
+                        <h4>Eggs</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-5.png" alt="">
+                        <h4>Sea Foods</h4>
+                    </div>
+
+                    <div class="items-header">
+                        <img src="images/icon-food-6.png" alt="">
+                        <h4>Meat</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- lets make product section  -->
+
+        <section class="product-sec pb-5">
+            <div class="container">
+
+                <h2 class="title text-center">Top Sell Products</h2>
+
+                <div class="product-slider mt-5">
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Cucumber</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-1.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Potato</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-2.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Spinach</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-3.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Milk</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-4.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Cabbage</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Zuccini</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-1.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Products</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-2.png" alt="">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>In Stock</h6>
+                                <h5>Products</h5>
+                                <span class="price">$22.00</span>
+                                <div class="cart-btn"><a href="">Add to cart <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- change the text as per choices  -->
+
+        <!-- lets make another section  -->
+
+        <section class="product-item-sec">
+            <div class="container">
+
+                <h2 class="title text-center">Fresh Offers</h2>
+
+                <div class="row mt-5 align-items-center">
+
+                    <div class="col-lg-4">
+                        <div class="product-timer">
+                            <img src="images/back-img-2.png" alt="">
+
+                            <div class="product-time">
+                                <div class="pr-time-text">
+                                    <h4 class="text-white"> Deals of the Week</h4>
+                                </div>
+
+                                <div class="timer-flex">
+                                    <ul>
+                                        <li>
+                                            25
+                                            <span>DAYS</span>
+                                        </li>
+                                        <li>
+                                            16
+                                            <span>HRS</span>
+                                        </li>
+                                        <li>
+                                            20
+                                            <span>MIN</span>
+                                        </li>
+                                        <li>
+                                            12
+                                            <span>SEC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nihil, molestiae!</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <!-- first add row -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Cucumber</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-1.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Potato</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-2.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Spinach</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- lets make weekends section  -->
+
+        <section class="weekend-sec py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="weekend-main" style="background: url(images/weekend-3-back.jpg);">
+                            <div class="weekend-text">
+                                <h5>Weekend discount 40%</h5>
+                                <h3>Surprice Mix Bhuja and peas</h3>
+                                <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="weekend-main" style="background: url(images/weekend-2-back.jpg);">
+                            <div class="weekend-text">
+                                <h5>Weekend discount 40%</h5>
+                                <h3>Peanuts Ruffs</h3>
+                                <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lets make a Full Product lists showing in 2 -rows  -->
+
+        <!-- copy the above products and pasted here just changing the look n feel img text as per choices  -->
+
+        <section class="product-sec pb-5">
+            <div class="container">
+
+                <h2 class="title text-center">Today Arrivals Fresh </h2>
+
+                <!-- adding the timser here too  -->
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="product-timer">
+                            <img src="images/item-time-2.jpg" alt="">
+
+                            <div class="product-time">
+                                <div class="pr-time-text">
+                                    <h4 class="text-white"> Deals of the Week</h4>
+                                </div>
+
+                                <div class="timer-flex">
+                                    <ul>
+                                        <li>
+                                            25
+                                            <span>DAYS</span>
+                                        </li>
+                                        <li>
+                                            16
+                                            <span>HRS</span>
+                                        </li>
+                                        <li>
+                                            20
+                                            <span>MIN</span>
+                                        </li>
+                                        <li>
+                                            12
+                                            <span>SEC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nihil, molestiae!</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="product-slider-2  mt-5">
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-6.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Banana</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-1.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Potato</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-2.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Spniach</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/product-img-3.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Milk</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/iten-1.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Lime</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/iten-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Onion</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/iten-3.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Broccli</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/iten-4.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>In Stock</h6>
+                                        <h5>Capsicum</h5>
+                                        <span class="price">$22.00</span>
+                                        <div class="cart-btn"><a href="">Add to cart <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- lets make another section  -->
+
+        <section class="featured-sec py-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-box"></i>
+                            <p>Everyday Fresh Products</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Free Delivery</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-percent"></i>
+                            <p>Best Price Market</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-box"></i>
+                            <p>Safety Delivered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lets make a bg sec  -->
+
+        <section class="bg-sec mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div class="bg-text">
+                            <h3>Eat Healthy , Look Young , Feels Good ! </h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur optio nesciunt et?
+                                Facere quo animi id totam dignissimos quam dolore eos, harum minus! Voluptatem nemo
+                                aspernatur dolorem repellendus quidem, odio dolor illum deserunt harum placeat!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestias ea, ipsa
+                                voluptates provident minus cumque quo dignissimos! Laudantium excepturi porro, sapiente
+                                unde fugit maiores.</p>
+                            <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lets make blog section  -->
+
+        <section class="blog-sec py-5">
+            <div class="container">
+
+                <h2 class="title text-center">News & Articles</h2>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-1.jpg" alt=""></div>
+                            <div class="blog-text">
+                                <h3>Best ways to reduce your belly fat with healthy eating !</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cumque!</p>
+                                <div class="blog-arrow">
+                                    <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-2.jpg" alt=""></div>
+                            <div class="blog-text">
+                                <h3>Best ways to reduce your belly fat with healthy eating !</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cumque!</p>
+                                <div class="blog-arrow">
+                                    <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-3.jpg" alt=""></div>
+                            <div class="blog-text">
+                                <h3>Best ways to reduce your belly fat with healthy eating !</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cumque!</p>
+                                <div class="blog-arrow">
+                                    <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- lets make footer  -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="footer-img">
+                            <img src="images/footer.png" alt="">
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati deserunt
+                                nobis tempora magnam minus quae.</p>
+
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-links ps-5">
+                            <h4>Useful Links</h4>
+
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>ABout</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Service</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Shop</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Products</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Categories</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Offers</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-links">
+                            <h4>Customers</h4>
+
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Shippemnts</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Privacy</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Order</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Returen</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Policies</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Orders</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Offers</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-cont">
+                            <h4>Contact Us</h4>
+
+                            <div class="footer-flex">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="">codingwing@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="">123456 7890</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="">123 Lorem, ipsum.</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyrights">
+                <p class="m-0">Copyrights | Coding Wing: | 2025 .</p>
+            </div>
+
+        </footer>
+        
+
+
+    </main>
+
+
+
+
+    <!-- bootsrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!-- for slider  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
