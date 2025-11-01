@@ -1,5 +1,6 @@
 let progress = document.getElementById('progress')
-let song = document.getElementById('progress');
+// select the audio element (id="song") not the progress input
+let song = document.getElementById('song');
 let ctrlIcon = document.getElementById('ctrlIcon');
 
 song.onloadedmetadata = function(){
@@ -20,15 +21,15 @@ function playPause(){
 
 }
 
-if(song.play()){
-    setInterval(()=> {
-        progress.value = song.currentTime
-    },500)
-}
+// update the progress input as the audio plays
+song.addEventListener('timeupdate', () => {
+    progress.value = song.currentTime;
+});
 
 progress.onchange = function(){
+    // seek to chosen time and ensure playback state reflects the control
+    song.currentTime = progress.value;
     song.play();
-    song.currentTime = progress.value
-    ctrlIcon.classList.add('fa-pause')
-        ctrlIcon.classList.remove('fa-play')
+    ctrlIcon.classList.add('fa-pause');
+    ctrlIcon.classList.remove('fa-play');
 }
