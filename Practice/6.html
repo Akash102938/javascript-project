@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent-card" style="padding: 20px; border: 2px solid black; background: lightgray;">
+  <h2>Card Title</h2>
+  <button>Click Inside Me!</button>
+  <p>Or click the background of the card.</p>
+</div>
+</body>
+<script>
+    const card = document.querySelector('#parent-card');
+
+card.addEventListener('click', function(event) {
+  console.log("--- New Click Event ---");
+  
+  // 1. event.target: What did your mouse actually touch?
+  console.log("Target (Origin):", event.target.tagName);
+  
+  // 2. event.currentTarget: Where is the listener attached?
+  console.log("CurrentTarget (Owner):", event.currentTarget.id);
+  
+  // Highlight the owner of the listener to show it's working
+  event.currentTarget.style.borderColor = "red";
+});
+</script>
+</html>

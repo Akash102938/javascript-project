@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname">
+        </div>
+        <div>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname">
+        </div>
+        <div>
+            <input type="submit" id="submit">
+        </div>
+    </form>
+    <p>
+    </p>
+</body>
+<script>
+    let fname =  document.getElementById('fname')
+    let lname = document.getElementById('lname')
+    let form = document.querySelector('form')
+    let para = document.querySelector('p')
+
+    form.addEventListener('submit', submittion)
+
+    function submittion(event){
+      if(fname.value === ''  || lname.value === ''){
+        event.preventDefault();
+        para.textContent = 'YOu need to fill in both name'
+      }
+      else {
+                para.textContent = '';
+                
+                // 🔥 PRINT IN CONSOLE
+                console.log('First Name:', fname.value);
+                console.log('Last Name:', lname.value);
+            }
+    }
+
+</script>
+</html>

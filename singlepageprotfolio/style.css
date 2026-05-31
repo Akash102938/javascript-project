@@ -1,0 +1,192 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #7600bc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_name {
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact_info {
+    font-size: 15px;
+    color: white;
+}
+
+.topdiv {
+    float: right;
+}
+
+.topmenu {
+    color: lightgray;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* About Me */
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.profile_image {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container h1 {
+    color: #7600bc;
+    font-size: 50px;
+}
+
+.container p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+
+/* Skills */
+
+h2 {
+    color: #7600bc;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.all_skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.skill {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 180px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.skill img {
+    width: 50px;
+}
+
+/* Projects */
+
+.projects-container {
+    margin: 40px;
+}
+
+.project-card {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recommendation {
+    font-style: italic;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+/* Form */
+
+fieldset {
+    width: 50%;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #7600bc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a0091;
+}
+
+/* Home Icon */
+
+.iconbutton {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+/* Popup */
+
+.popup {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    padding: 20px;
+    visibility: hidden;
+    box-shadow: 2px 2px 15px gray;
+}
+
+.popup img {
+    width: 60px;
+}

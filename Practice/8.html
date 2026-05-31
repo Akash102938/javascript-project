@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #121212; color: wheat;">
+    <h1>Promise Topic</h1>
+</body>
+<script>
+    const value = 5.9;
+    const promise = new Promise((resolve,reject)=>{
+       if(Number.isInteger(value)){
+        resolve(value);
+       }
+       else{
+        reject('its not an integer number')
+       }
+    })
+    .then(value =>{
+        return value*2;
+    })
+    .then(addTen =>{
+        return addTen+10;
+    })
+    .then(multiplyByThree =>{
+        return multiplyByThree*3;
+    })
+    .then((finalOutPut)=>{
+        console.log(finalOutPut);
+    })
+    .catch((error)=>{
+        console.log(error);
+        
+    })
+</script>
+</html>

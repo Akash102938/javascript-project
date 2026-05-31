@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #121212;
+            color: white;
+        }
+        #git{
+            color: #93CAE6;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello Sister</h1>
+    <a id="git" href= "https://github.com/Akash102938">Github</a>
+</body>
+<script>
+    function changeMe(event){
+        console.log(event);
+        
+        let headingchange = document.getElementById('heading')
+        headingchange.innerHTML = 'Hello Brother'
+    }
+    
+   let headingchange = document.getElementById('heading')
+   headingchange.addEventListener('click', changeMe)
+
+   let git = document.getElementById('git')
+
+   git.addEventListener('click', changeLinkName);
+
+   function changeLinkName(event){
+    console.log(event);
+    event.preventDefault()
+    git.innerHTML = 'Git'
+   }
+    
+</script>
+</html>

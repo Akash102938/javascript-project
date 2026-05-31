@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <p id="opara">First <span>you span</span> para</p>
+        <p id="spara">Second <span>me span</span>para</p>
+        <p id="tpara">Third <span>them span</span> para</p>
+        <p id="fpara">Fourth <span>our span</span> para</p>
+    </div>
+</body>
+<script>
+    let wrap  = document.querySelector('.wrap')
+    
+   wrap.addEventListener('click', clickMe)
+
+    function clickMe(event){
+        if(event.target.matches('span')){
+             alert('Element content Name '+ event.target.textContent)
+        }
+       
+    }
+</script>
+</html>

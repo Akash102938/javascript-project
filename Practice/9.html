@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Hello
+    </h1>
+</body>
+<script>
+    //SIMPLE WAY
+    // function groupBirthdays(users, groupBy) {
+    //     const result = new Map();
+
+    //     users.forEach((user) => {
+    //         const key = getKey(groupBy, user.birthday);
+
+    //         if (result.has(key)) {
+    //             result.get(key).push(user);
+    //         } else {
+    //             result.set(key, [user]);
+    //         }
+    //     });
+
+    //     return result;
+    // }
+
+    // function getKey(groupBy, date) {
+    //     if (groupBy === "day") {
+    //         return date.getDate();
+    //     }
+    //     if (groupBy === "year") {
+    //         return date.getFullYear();
+    //     }
+    //     return date.getMonth() + 1;
+    // }
+
+    // const users = [
+    //     { name: "Akash", birthday: new Date("2000-05-10") },
+    //     { name: "Ravi", birthday: new Date("1999-05-25") },
+    //     { name: "Neha", birthday: new Date("2001-08-10") },
+    //     { name: "Aman", birthday: new Date("2000-08-18") }
+    // ];
+    // const groupedByMonth = groupBirthdays(users, "month");
+    // console.log("Grouped by Month:", groupedByMonth);
+
+    // const groupedByDay = groupBirthdays(users, "day");
+    // console.log("Grouped by Day:", groupedByDay);
+
+    // const groupedByYear = groupBirthdays(users, "year");
+    // console.log("Grouped by Year:", groupedByYear);
+
+
+    //OPTIMIZE WAY
+    function groupBirthdays(users, groupBy) {
+      const result = new Map();
+
+      for (const { birthday, ...user } of users) {
+        const key = getKey(groupBy, birthday);
+
+        if (!result.has(key)) {
+          result.set(key, []);
+        }
+
+        result.get(key).push({ ...user, birthday });
+      }
+
+      return result;
+    }
+
+    function getKey(groupBy, date) {
+      switch (groupBy) {
+        case "day":
+          return date.getDate();
+        case "year":
+          return date.getFullYear();
+        default:
+          return date.getMonth() + 1; // month
+      }
+    }
+
+    const users = [
+      { name: "Akash", birthday: new Date("2000-05-10") },
+      { name: "Ravi", birthday: new Date("1999-05-25") },
+      { name: "Neha", birthday: new Date("2001-08-10") },
+      { name: "Aman", birthday: new Date("2000-08-18") }
+    ];
+
+    ["month", "day", "year"].forEach(type => {
+      console.log(
+        `Grouped by ${type}:`,
+        groupBirthdays(users, type)
+      );
+    });
+
+
+</script>
+
+</html>
